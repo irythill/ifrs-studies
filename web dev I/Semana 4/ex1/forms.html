@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de registro</title>
+  </head>
+  <body>
+
+    <h1>Registro</h1>
+    
+    <form method="get">
+      
+      <div class="name_surname">
+        <label for="name">
+            Nome: <input type="text" name="name" id="name" placeholder="Fulano" required  />
+        </label>
+
+        <label for="surname">
+          Sobrenome: <input type="text" name="surname" id="surname" placeholder="de Tal" required  />
+        </label>
+     </div>
+
+       
+      <div class="gender">
+        <label for="gender_mas">
+          Masculino <input type="radio" name="gender" id="gender_mas" value="mas" required /> 
+        </label>
+        
+        <label for="gender_fem">
+          Feminino <input type="radio" name="gender" id="gender_fem" value="fem"  required />
+        </label>
+      </div>
+
+      <div class="email_password">
+        <label>
+          E-mail: <input type="email" name="email" required placeholder="fulano@email.com" />
+        </label>
+      
+        <label>
+          Password: <input type="password" placeholder="Digite a sua senha" minlength="5" maxlength="10" required />
+        </label>
+      </div>
+
+      <div class="birthday">
+       <label>
+          Aniversário: 
+          <select name="day" required>
+            <option value="none" selected disabled>Dia</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <select name="month" required>
+            <option value="none" selected disabled>Mês</option>
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+          </select>
+
+          <select name="year" required>
+            <option value="none" selected disabled>Ano</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select> 
+        </label>
+      </div>
+
+      <div class="terms">
+        <label>
+          Li e concordo com os
+          <a href="https://www.instagram.com/irythill/"
+            ><strong>Termos e Condições</strong
+            ><input type="checkbox" name="checkbox" required
+          /></a>
+        </label>
+      </div>
+
+    <div class="submit"> 
+      <input type="submit" name="submit" />
+    </div>
+    
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 50px;
+  cursor: pointer;
+  height: 4rem;
+  transition: background .1s;
+  width: 8rem;
+}
+
+button:active {
+  background-color: red;
+}
